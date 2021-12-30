@@ -23,7 +23,7 @@ def resolve_route(routes, route):
         print(temp_route)
         if temp_route['route'] == route:
             return temp_route['url']
-    flash('Test', 'warning')
+    flash('Route not found, check for typos.', 'warning')
     return '/'
 
 @app.route('/')
